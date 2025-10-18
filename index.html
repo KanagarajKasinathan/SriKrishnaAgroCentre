@@ -1,56 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sri Krishna Agro Center</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sri Krishna Agro Center — Pavunjur, Chengalpattu</title>
+  <meta name="description" content="Sri Krishna Agro Center — agricultural supplies, seeds, fertilisers and farm advisory in Pavunjur, Chengalpattu, Tamil Nadu 603312." />
+  <meta property="og:title" content="Sri Krishna Agro Center" />
+  <meta property="og:description" content="Agricultural supplies, seeds, fertilisers and farm advisory in Pavunjur, Chengalpattu, Tamil Nadu." />
+  <meta property="og:type" content="website" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #4CAF50; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    .contact, .products, .about { background: white; margin: 20px auto; padding: 20px; border-radius: 8px; max-width: 800px; }
-    footer { text-align: center; padding: 10px; background: #ddd; }
-    iframe { width: 100%; height: 300px; border: none; }
+    :root{--accent:#2b7a3a;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.6;margin:0;color:#111}
+    header{background:linear-gradient(180deg,#ecf8ef,#ffffff);padding:28px 18px;border-bottom:1px solid #e6efe6}
+    .container{max-width:1000px;margin:0 auto;padding:20px}
+    h1{margin:0 0 6px;font-size:clamp(1.4rem,2.5vw,2rem)}
+    .sub{color:var(--muted);font-size:0.95rem}
+    .hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(18,52,32,0.06);padding:18px}
+    nav{margin-top:12px}
+    a.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    main{padding:28px 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .section{margin-bottom:20px}
+    ul.services{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    ul.services li{background:#f7fff7;border:1px solid #e7f5e7;padding:12px;border-radius:8px}
+    .contact p{margin:6px 0}
+    footer{padding:18px;color:var(--muted);font-size:0.9rem;text-align:center;border-top:1px solid #eee}
+    .map{width:100%;height:260px;border-radius:10px;overflow:hidden;border:1px solid #e7e7e7}
+    .logo{width:84px;height:84px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4caf50);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    .address{font-size:0.95rem}
+    .small-muted{color:var(--muted);font-size:0.9rem}
   </style>
 </head>
 <body>
+  <header>
+    <div class="container hero">
+      <div style="display:flex;gap:16px;align-items:center">
+        <div class="logo">SK</div>
+        <div>
+          <h1>Sri Krishna Agro Center</h1>
+          <div class="sub">Pavunjur, Chengalpattu, Tamil Nadu — 603312</div>
+        </div>
+      </div>
+      <nav style="margin-left:auto">
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>Sri Krishna Agro Center</h1>
-  <p>Pavunjur, Chengalpattu, Tamil Nadu – 603312</p>
-</header>
+  <main class="container">
+    <div class="grid">
+      <section>
+        <div class="card section">
+          <h2>Welcome</h2>
+          <p class="small-muted">Sri Krishna Agro Center provides agricultural inputs and advisory services to farmers in and around Pavunjur, Chengalpattu. We stock seeds, fertilisers, pesticides, farm tools and offer crop-management guidance tailored to local conditions.</p>
+        </div>
 
-<section class="about">
-  <h2>Welcome</h2>
-  <p>We are your trusted partner in agriculture, offering quality products and expert advice to farmers in Pavunjur and nearby areas.</p>
-</section>
+        <div class="card section">
+          <h3>Our services</h3>
+          <ul class="services">
+            <li>High-quality seeds (vegetables & cereals)</li>
+            <li>Organic & chemical fertilisers</li>
+            <li>Crop protection products & advisory</li>
+            <li>Soil testing & recommendations</li>
+            <li>Farm implements & accessories</li>
+            <li>Custom fertiliser mixes</li>
+          </ul>
+        </div>
 
-<section class="products">
-  <h2>Our Products & Services</h2>
-  <ul>
-    <li>Fertilizers & Pesticides</li>
-    <li>High-yield Seeds</li>
-    <li>Agricultural Tools & Equipment</li>
-    <li>Crop Consultation & Soil Health Advice</li>
-  </ul>
-</section>
+        <div class="card section">
+          <h3>Why choose us</h3>
+          <p class="small-muted">Local expertise — we understand Chengalpattu district soil and cropping patterns. Reliable supply — genuine products from trusted brands. Practical advice — actionable guidance for better yields and reduced input costs.</p>
+        </div>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Address:</strong> Main Road, Pavunjur, Chengalpattu, Tamil Nadu – 603312</p>
-  <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-  <p><strong>Email:</strong> info@srikrishnaagro.in</p>
-  <p><strong>Hours:</strong> Mon–Sat: 9 AM – 6 PM | Sun: Closed</p>
-</section>
+        <div class="card section" id="hours">
+          <h3>Opening hours</h3>
+          <p class="small-muted">Mon − Sat: 8:30 AM — 7:00 PM<br>Sun: Closed / by appointment</p>
+        </div>
 
-<section class="map">
-  <h2>Find Us on Google Maps</h2>
-  <iframe src="https://www.google.com/maps?q=Pavunjur,+Tamil+Nadu+603312&output=embed"></iframe>
-</section>
+      </section>
 
-<footer>
-  <p>&copy; 2025 Sri Krishna Agro Center</p>
-</footer>
+      <aside>
+        <div class="card contact section">
+          <h3>Contact</h3>
+          <p class="address">Sri Krishna Agro Center<br>C2W5+3RF, Pavunjur-Koovathur Rd, Pavunjur, Chengalpattu<br>Tamil Nadu — 603312</p>
+          <p><strong>Email:</strong> <a href="mailto:info@srikrishnaagro.example">info@srikrishnaagro.example</a></p>
+          <p><strong>Phone:</strong> <span class="small-muted">+91‑<em>7708470724</em></span></p>
+          <p><a class="btn" href="mailto:info@srikrishnaagro.example?subject=Enquiry%20for%20Sri%20Krishna%20Agro%20Center">Send Email</a></p>
+        </div>
 
+        <div class="card section map">
+          <!-- Google Maps embed (search). Replace query if you have exact coordinates -->
+          <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps?q=Sri+Krishna+Agro+Center+Pavunjur+Chengalpattu+Tamil+Nadu+603312&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="card section">
+          <h4>Quick links</h4>
+          <p class="small-muted"><a href="#services">Products & Services</a> · <a href="#hours">Hours</a> · <a href="#contact">Contact</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="card section" id="contact" style="margin-top:18px">
+      <h3>Send us a message</h3>
+      <form action="mailto:info@srikrishnaagro.example" method="post" enctype="text/plain" onsubmit="alert('This will open your email client. Replace the placeholder email with your real email address in the HTML before publishing.');">
+        <p><label>Name<br><input name="name" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd"></label></p>
+        <p><label>Email<br><input name="email" type="email" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd"></label></p>
+        <p><label>Message<br><textarea name="message" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;height:120px"></textarea></label></p>
+        <p><button class="btn" type="submit">Open email</button></p>
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Sri Krishna Agro Center — Pavunjur, Chengalpattu</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
