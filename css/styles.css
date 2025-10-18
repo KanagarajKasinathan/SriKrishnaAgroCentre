@@ -1,6 +1,15 @@
-body{
-  padding: 25px;
+.side-images img {
+  width: 180px;                /* Increased size */
+  height: auto;                /* Keeps aspect ratio */
+  opacity: 0.95;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  object-fit: cover;           /* Ensures proper cropping if needed */
+  margin: 20px 0;              /* Adds spacing between stacked images */
 }
-.title {
-	color: #5C6AC4;
+.left-images { 
+  left: -190px;                /* Shifted slightly outward */
+}
+.right-images { 
+  right: -190px;
 }
